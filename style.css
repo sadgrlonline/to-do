@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+:root {
+    --background-color: #C0D823;
+    --accent: #EDF547;
+    --accent-2: #EF49F2;
+    --dark: #8124AA;
+}
+
+@font-face {
+    font-family: Virtual Rot;
+    src: url('https://sadgrl.online/fonts/VirtualRot-Regular.ttf');
+}
+
+@font-face {
+    font-family: Virtual DJ;
+    src: url('https://sadgrl.online/fonts/Vdj.ttf');
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: "Inconsolata";
+}
+
+body {
+    background-color: var(--accent);
+    background-image: url('https://sadgrl.online/images/bgs/tile/starsrbowbg.gif');
+}
+
+h1 {
+    font-family: Virtual Rot;
+    font-size: 46px;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.title-bar {
+    background-color: var(--dark);
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.container {
+    background-color: var(--accent-2);
+    margin: 20px;
+    border: 1px solid black;
+    height: auto;
+
+}
+
+.section-container {
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+.c-wrapper {
+    display: flex;
+    padding: 20px;
+    height: auto;
+    background-color: var(--background-color);
+    width: 94%;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    padding-bottom: 200px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.d-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.wrapper {
+    padding: 10px;
+    width: 100%;
+}
+
+h2 {
+    font-family: Virtual Rot;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 30px;
+}
+
+.border {
+    border: 1px solid;
+    border-image-source: url('https://sadgrl.online/images/borders/f_10773214_1.gif');
+    border-image-slice: 20;
+    border-image-width: 20;
+    border-image-outset: 9;
+    border-image-repeat: round;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.section>details {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 400px;
+    display: block;
+}
+
+.section .title {
+    font-weight: bold;
+
+}
+
+li {
+    background-color: black;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    display: flex;
+    max-width: 200px;
+    padding: 4px;
+    border-radius: 2px;
+    color: #c776ed;
+    font-weight: bold;
+}
+
+summary {
+    font-family: Virtual DJ;
+    font-size: 12px;
+}
+
+details input[type="text"] {
+    width: 200px !important;
+}
+
+.addItem {
+    text-align: right;
+    margin-left: 250px;
+}
+
+li:hover {
+    transform: rotate(5deg);
+    cursor: pointer;
+}
+
+#description {
+    background-color: black;
+    padding: 3px;
+    color: white;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    display: none;
+
+}
+
+.close {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+}
+
+.close a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
